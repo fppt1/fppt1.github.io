@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Neon Lights</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1>Hello!</h1>
+        
+        <div id="progressBar"></div>
+        <div id="scrollPath"></div>
+        <div id="percent"></div>
+        
+        <script type="text/javascript">
+            let progressBar = document.getElementById("progressBar");
+            let totalHeight = document.body.scrollHeight - window.innerHeight;
+            let percent = document.getElementById("percent")
+
+            window.onscroll = function() {
+                let progress = (window.pageYOffset / totalHeight) * 100;
+                progressBar.style.height = progress + "%";
+                percent.innerHTML = "Page scrolled " + Math.round(progress) + "%";
+            }
+        </script>
+        
+        <script src="app.js"></script>
+
+        <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Click me!
+        </a>
+    </body>
+</html>
