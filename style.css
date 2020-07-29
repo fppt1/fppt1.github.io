@@ -91,17 +91,6 @@ body h1 {
     filter: blur(30px);
 }
 
-#percentage {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%) rotateX(180deg);
-    right: 15px;
-    color: white;
-    font-size: 2em;
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-}
-
 
 /*Button*/
 
